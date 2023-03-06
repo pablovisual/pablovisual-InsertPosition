@@ -1,4 +1,4 @@
-
+import java.util.*;
 
 public class InsertPosition {
 
@@ -52,5 +52,18 @@ public class InsertPosition {
         //numbers in the nums array
         index += nums.length;
         return index;
+
+        //now doing it with a set
+        /*Set<Integer> position = new TreeSet<>();
+
+        for(int index = 0; index < nums.length; ++index) {
+            position.add(nums[index]);
+        }
+
+        position.add(target);
+        
+        List<Integer> arr = new ArrayList<>(position);
+
+        return arr.indexOf(target);*/
     }
 }
